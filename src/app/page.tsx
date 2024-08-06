@@ -9,7 +9,7 @@ import UserCard from "@/components/UserCard";
 
 export default function RandomUserPage() {
   // annotate type for users state variable
-  const [users, setUsers] = useState();
+  const [users, setUsers] = useState<UserCardProps[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [genAmount, setGenAmount] = useState(1);
 
